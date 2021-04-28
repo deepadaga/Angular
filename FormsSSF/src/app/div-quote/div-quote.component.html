@@ -1,52 +1,103 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <div class="row">
-        <div class="col-sm">
-          <label >Prem Pd to dt <input type="text"  ></label> 
-        </div>
-        <div class="col-sm">
-          <label >Anniv Yr <input type="text" ></label>
+<form [formGroup]="DivQuoteForm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Prem Pd to dt </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="PremPdtoDt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Next Activity Date </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="NextActDt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Max Div. </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="MaxDiv">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Div. Overpayment </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="DivOverpay">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Cash Val OPP Paid-up Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="CVOPUA">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Mod Endow Ind </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="ModEndInd">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Next activity Dt <input type="text" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Loan interest paid to dt <input type="text" ></label>
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Anniv Year </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AnnivYr">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Loan Int Paid to Date </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="LoanIntPdtoDt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Loan Amount </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="LoanAmt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Loan Interest Rate </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="LoanIntRt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Variance Codes </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="VarianceCd">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Max div. <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Loan Interest amt <input type="text" size="18em" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Div overpayment <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Div overpayment date <input type="text" size="18em" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Cash Val OPP paid up adds <input type="text" size="18em" ></label>  
-        </div>
-        
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Mod Endow Ind  <input type="text" size="18em" ></label>
-        </div>
-        <div class="col-sm">
-          <label >Variance codes <input type="text" size="18em" ></label>  
-        </div>
-    </div> 
+    </div>
   </div>
-</div>
+</form>
 

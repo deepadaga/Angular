@@ -1,58 +1,176 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <div class="row">
-        <div class="col-sm">
-          <label >OPP Plan Code <input type="text"  ></label> 
-        </div>
-        <div class="col-sm">
-          <label >Modal Amt <input type="text" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >OPP Present <input type="text" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Accum Prem <input type="text" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >OPP Type <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Accum paid up-adds <input type="text" size="18em" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >OPP Agent <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >No Good Check Ind <input type="text" size="18em" ></label>
-        </div>
-      </div>        
-    
+<form [formGroup]="profileForm">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm">
-        <label >OPP Rider Eff Dt  <input type="text" size="18em" ></label>
+        <div class="rounded border border-primary mb-5">
+          <div class="container">
+            <h6 class="text-center">Current Year</h6>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Premium </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" formControlName="PremCY">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Paid up Adds </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" formControlName="PaidCY">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-sm">
-        <label >No Good Check Dt <input type="text" size="18em" ></label>  
+        <div class="rounded border border-primary mb-5">
+          <div class="container">
+            <h6 class="text-center">Prior Year</h6>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Premium </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" formControlName="PremPY">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Paid up Adds </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" formControlName="PaidPY"> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Total Paid up Adds </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" formControlName="TotPaidPY">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div> 
-  <div class="row">
-    <div class="col-sm">
-      <label >OPP Rider Eff Dt  <input type="text" size="18em" ></label>
     </div>
-    <div class="col-sm">
-      <label >No Good Check Dt <input type="text" size="18em" ></label>  
-    </div>
-</div> 
   </div>
-</div>
-
-    
-    
-            
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Plan Cd </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="PlanCd">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Present </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="OppInd">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Type </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="Type">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Agent </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="Agent">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Rider Effective date </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="EffDt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>AD Year </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AdYr">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>OPP Rating class </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="RatingClass">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Modal Amount </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="ModalAmt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Accumulated Premium </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AccuPrem">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Accumulated Paid-up Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AccuPdUp">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>No Good check indicator </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="NGCheckInd">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>No Good check date </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="NGCheckDt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Current Expense charge </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="CurrExpChg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

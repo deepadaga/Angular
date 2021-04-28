@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 
 @Component({
@@ -15,3 +17,5 @@ export class AppComponent {
     this.router.navigate([`${pageName}`]);
   }
 }
+
+

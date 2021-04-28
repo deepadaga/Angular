@@ -6,6 +6,7 @@ import { LoanValueComponent } from './loan-value/loan-value.component';
 import { CalcquoteComponent} from './calcquote/calcquote.component';
 import { Routes, RouterModule } from '@angular/router';
 import { OppComponent} from './opp/opp.component'
+import { AddoppComponent } from './addopp/addopp.component';
 
 const routes: Routes = [
   { path: 'divquote', component: DivQuoteComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'LoanValue', component: LoanValueComponent},
   { path: 'Calcquote', component: CalcquoteComponent},
   { path: 'opp', component: OppComponent},
+  { path: 'addopp', component: AddoppComponent},
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }

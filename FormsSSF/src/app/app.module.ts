@@ -10,6 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CalcquoteComponent } from './calcquote/calcquote.component';
 import { OppComponent } from './opp/opp.component';
 import { AddoppComponent } from './addopp/addopp.component';
+import { UserComponent } from './user/user.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { AddoppComponent } from './addopp/addopp.component';
     LoanValueComponent,
     CalcquoteComponent,
     OppComponent,
-    AddoppComponent
+    AddoppComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

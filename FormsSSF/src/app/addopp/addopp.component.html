@@ -1,25 +1,52 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm">
-        <label> Annual Standard Base Prem Amount <input type="text"  ></label> 
-    </div>
-    <div class="col-sm">
-      <label >Current Year Accum OPP Rider Prem Amt <input type="text"  ></label> 
-    </div>
-    <div class="col-sm">
-       <label> Prior Year Accum OPP Rider Prem Amt <input type="text" ></label>
-    </div>
-    <div class="col-sm">
-       <label >Next Year Accum OPP Rider Prem Amt <input type="text"  ></label> 
-    </div>
-    <div class="col-sm">
-       <label >Total OPP Rider Prem Paid Amt <input type="text" ></label>
-    </div>
-    <div class="col-sm">
-       <label >OPP Rider Exception Cod <input type="text"  ></label> 
-    </div>
+<form [formGroup]="AddOppForm">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-4">
+            <label> Annual Standard Base Prem Amount </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="ASBPA">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <label>Current Year Accum OPP Rider Prem Amt </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="CYAORPA">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <label> Prior Year Accum OPP Rider Prem Amt </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="PYAORPA">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <label>Next Year Accum OPP Rider Prem Amt </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="NYAORPA">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <label>Total OPP Rider Prem Paid Amt </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="TORPPA">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <label>OPP Rider Exception Cod </label>
+         </div>
+         <div class="col-sm-8">
+            <input type="text" formControlName="OREC">
+         </div>
+      </div>
    </div>
-  </div>
-    
-    
-            
+</form>

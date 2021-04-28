@@ -1,64 +1,131 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm">
-      <div class="row">
-        <div class="col-sm">
-          <label >Current Dividend <input type="text"  ></label> 
-        </div>
-        <div class="col-sm">
-          <label >Accumulated Paid Up-Adds <input type="text" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Dividend Option <input type="text" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Div Interest Amt(2019) <input type="text" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Dividend deposits <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Div Interest Amt() <input type="text" size="18em" ></label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <label >Paid Up Adds <input type="text" size="18em" ></label>  
-        </div>
-        <div class="col-sm">
-          <label >Loan Payoff by Div <input type="text" size="18em" ></label>
-        </div>
-      </div>        
-    
+<form [formGroup]="DivValForm">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm">
-        <label >Cash Val of Pd up Adds  <input type="text" size="18em" ></label>
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Current Dividend </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="CurrDiv">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Dividend Option </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="DivOptn">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Dividend Deposits </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="DivDepo">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Paid Up Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="PaidUpAdds">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Cash Val of Paid-up Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="CVOPUA">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Whole Life Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="WholeLifeAdds">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Cash Value of Whole Life Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="CVOWLA">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm">
-        <label >Add Val Off Accptd <input type="text" size="18em" ></label>  
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Accumulated Paid-up Adds </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AccuPUA">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Div Int Amount(2019) </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="DivIntAmt(2019">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Div Interest Amount( ) </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="DivIntAmt">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Loan Payoff by Div </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="LoanPay">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>Add Val Off Accepted </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="AddVal">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>One Year Term </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="OYT">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label>One Year Term Prem </label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" formControlName="OYTPrem">
+            </div>
+          </div>
+        </div>
       </div>
-  </div> 
-  <div class="row">
-    <div class="col-sm">
-      <label >Whole Life Adds <input type="text" size="18em" ></label>
     </div>
-    <div class="col-sm">
-      <label >One Year Term <input type="text" size="18em" ></label>  
-    </div>
-</div> 
-<div class="row">
-  <div class="col-sm-7">
-    <label >Cash Value of Whole Life Adds <input type="text"  ></label>
   </div>
-  <div class="col-sm-5">
-    <label >One Year Term Prem <input type="text"  ></label>  
-  </div>
-</div> 
-  </div>
-</div>
+</form>
+
+
+
    
             
