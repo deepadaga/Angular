@@ -1,29 +1,22 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
   <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="divquote"><strong>Dividend Quote</strong> </a>
-      <a class="nav-item nav-link" routerLink="/divivalue"><strong>Dividend Value </strong></a>
-      <a class="nav-item nav-link" routerLink="/LoanValue"><strong>Loan/Cash Value</strong> </a>
-      <a class="nav-item nav-link" routerLink="/Calcquote"><strong>Calc Quote</strong> </a>
-      <a class="nav-item nav-link" routerLink="/opp"><strong>OPP</strong> </a>
-      <a class="nav-item nav-link" routerLink="/addopp"><strong>Addn OPP</strong> </a>
+    <a class="nav-item nav-link" routerLink="divquote"><strong>Dividend Quote</strong> </a>
+    <a class="nav-item nav-link" routerLink="/divivalue"><strong>Dividend Value </strong></a>
+    <a class="nav-item nav-link" routerLink="/LoanValue"><strong>Loan/Cash Value</strong> </a>
+    <a class="nav-item nav-link" routerLink="/Calcquote"><strong>Calc Quote</strong> </a>
+    <a class="nav-item nav-link" routerLink="/opp"><strong>OPP</strong> </a>
+    <a class="nav-item nav-link" routerLink="/addopp"><strong>Addn OPP</strong> </a>
   </div>
 </nav>
 
 <div class="jumbotron" style="padding-block-end: 1em; padding-block-start: 2em;">
-  <!-- <div class="container-fluid"> -->
-    <!-- <div class="row"> -->
-      <router-outlet></router-outlet>
-    <!-- </div> -->
-  <!-- </div> -->
+  <router-outlet></router-outlet>
 </div>
 
 <div>
-  <button style="margin-right: 1em;">  OPL data</button>
-  <button (click)="goToPage('opp')" style="margin-right: 1em;">  OPP data</button> 
+  <button style="margin-right: 1em;"> OPL data</button>
+  <button (click)="goToPage('opp')" style="margin-right: 1em;"> OPP data</button>
   <button style="margin-right: 19em;"> TREM processes</button>
-    <button style="margin-right: 1em;"> Calculate</button>
-    <button> Close</button>
+  <button style="margin-right: 1em;"> Calculate</button>
+  <button> Close</button>
 </div>
-
-
-

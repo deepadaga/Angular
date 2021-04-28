@@ -10,7 +10,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CalcquoteComponent } from './calcquote/calcquote.component';
 import { OppComponent } from './opp/opp.component';
 import { AddoppComponent } from './addopp/addopp.component';
-import { UserComponent } from './user/user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     CalcquoteComponent,
     OppComponent,
     AddoppComponent,
-    UserComponent
   ],
   imports: [
     BrowserModule,
